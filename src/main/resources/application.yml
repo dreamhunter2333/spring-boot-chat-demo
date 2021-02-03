@@ -1,0 +1,20 @@
+spring:
+  profiles:
+    active: ${profile:default}
+  application:
+    name: Chat
+  redis:
+    database: 0
+    host: demo
+    port: 7002
+    password: demo
+    timeout: 3000
+    lettuce:
+      pool:
+        max-active: 200
+        max-wait: 5000
+        max-idle: 8
+        min-idle: 0
+
+server:
+  port: 9999
